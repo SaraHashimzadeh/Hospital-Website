@@ -1,0 +1,13 @@
+nav {
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    z-index: 10;
+    display: grid;
+    background: red;
+
+    .container {
+        background: white;
+        display: inline;
+    }
+}
