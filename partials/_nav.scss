@@ -34,3 +34,44 @@ nav {
         color: $white-color;
     }
 }
+
+@media screen and (max-width: 1024px){
+    nav {
+        .container {
+            button {
+                display: inline-block;
+                background: transparent;
+                color: $white-color;
+                font-size: 2rem;
+                cursor: pointer;
+
+                &#close__nav-btn {
+                    display: none;
+                }
+            }
+
+            ul {
+                position: fixed;
+                right: 5%;
+                top: 5rem;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0;
+
+                li {
+                    width: 100%;
+
+                    a {
+                        color: $white-color;
+                        height: 100%;
+                        display: block;
+                        padding: 1.5rem 2rem;
+                        border-radius: 0;
+                        background: $primary-color-variant;
+                    }
+                }
+            }
+        }
+
+    }
+}
