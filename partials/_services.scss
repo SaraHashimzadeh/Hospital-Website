@@ -1,0 +1,14 @@
+#services {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+
+        article {
+            @include gradientBackground;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            display: flex;
+        }
+    }
+}
